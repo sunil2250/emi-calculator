@@ -13,9 +13,8 @@ function Loan (amount, installmentsNumber, interestRate) {
   if (!amount || amount <= 0 ||
     !installmentsNumber || installmentsNumber <= 0 ||
     !interestRate || interestRate <= 0) {
-   throw new Error(`wrong parameters: ${amount} ${installmentsNumber} ${interestRate}`)
- }
-   
+    throw new Error(`wrong parameters: ${amount} ${installmentsNumber} ${interestRate}`)
+  }
 
   if (!amount ||
      !installmentsNumber ||
